@@ -34,10 +34,28 @@
             height: 50%; 
         }
 
-        button.centrado {
+        .button {
+            background-color: white;
+            border:2px solid #008CBA;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+            border-radius: 8px;
+
+
             width: 110px; 
             margin-left: 50%;
             transform: translateX(-50%);
+        }
+        .button:hover {
+            background-color:#008CBA; /* Green */
+             color: white;
         }
       </style>
    
@@ -55,7 +73,7 @@
    
     <div id="mostrarHora"><script>mostrarHora();</script></div>     
         <section id ="ubicación">
-            <button class="centrado" id="calcula_error" > Google </button>    
+            <button class="button" id="calcula_error" > Google </button>    
         </section>
     </div>
 
