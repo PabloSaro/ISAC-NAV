@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+
+  
+    <!-- Webpage Title -->
+    <title>ISAC-Nav</title>
+    
+    <!-- Styles -->
+  
+	<link href="css/styles.css" rel="stylesheet">
+	
+
+    <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css" />
+    <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
+
+
+
+
+    <style>
+
+        #map{ 
+            margin: 0 auto;
+            width: 95%; 
+            height: 93%; 
+        }
+        #inav{
+
+            width: 50%; 
+            height: 50%; 
+        }
+
+        .button {
+            background-color: white;
+            border:2px solid #008CBA;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+            border-radius: 8px;
+
+
+            width: 110px; 
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .button:hover {
+            background-color:#008CBA; /* Green */
+             color: white;
+        }
+      </style>
+   
+
+
+</head>
+<body>
+
+    <div id="map"> </div>
+
+   
+    <script src="js/AntenasFijo.js"></script>
+    <script src="js/Antenas.js"></script>
+
+   
+    <div id="mostrarHora"><script>mostrarHora();</script></div>     
+        <section id ="ubicación">
+            <button class="button" id="calcula_error" > Google </button>    
+        </section>
+    </div>
+
+    
+</body>
+</html>
